@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: weather-ml-deploy
+  labels:
+    app: weather-ml-app
+spec:
+  replicas: 2   # >=2 so you can do rolling updates
+  selector:
+    matchLabels:
+      app: weather-ml-app
+  template:
+    metadata:
+      labels:
+        app: weather-ml-app
+    spec:
+      containers:
+        - name: weather-ml-app
+          image: domnup/weather-ml-app:latest
+          ports:
+            - containerPort: 5000
+          #  could add env vars here if needed
