@@ -49,7 +49,7 @@ jobs:
     
     - name: Docker Container Test
       run: |
-        docker run --rm weather-ml-app:test 
+        docker run --rm weather-ml-app:test \
           python -c "print('Container started successfully')"
         
     - name: Docker Login
