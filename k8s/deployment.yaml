@@ -17,6 +17,7 @@ spec:
       containers:
         - name: weather-ml-app
           image: domnup/weather-ml-app:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 5000
           #  could add env vars here if needed
