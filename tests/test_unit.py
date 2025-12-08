@@ -47,7 +47,7 @@ class TestUnit(unittest.TestCase):
         class_result, _ = classify_weather(test_input)
         self.assertIn(class_result, [
             'clear', 'cloudy', 'drizzly', 'foggy', 'hazey',
-            'misty', 'rainy', 'smokey', 'thunderstorm'
+            'misty', 'rain', 'smokey', 'thunderstorm'
         ])
 
     # FOGGY classification test
