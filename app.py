@@ -1,3 +1,4 @@
+
 from flask import Flask, request, render_template
 import pickle
 import numpy as np
@@ -13,7 +14,7 @@ weather_classes = [
     "foggy",
     "hazey",
     "misty",
-    "rainy",
+    "rain",
     "smokey",
     "thunderstorm",
 ]

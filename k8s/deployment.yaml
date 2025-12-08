@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: weather-ml-app
-          image: domnup/weather-ml-app:v1
+          image: domnup/weather-ml-app:v2
           ports:
             - containerPort: 5000
           imagePullPolicy: IfNotPresent
