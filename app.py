@@ -13,7 +13,7 @@ weather_classes = [
     "foggy",
     "hazey",
     "misty",
-    "rain",
+    "rainy",
     "smokey",
     "thunderstorm",
 ]
@@ -114,3 +114,4 @@ def home():
 if __name__ == "__main__":
     # Local run (Flask dev server). In Docker/K8s gunicorn/uwsgi might be used instead.
     app.run(host="0.0.0.0", port=5000)
+
